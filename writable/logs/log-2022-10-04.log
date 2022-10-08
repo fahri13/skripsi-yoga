@@ -1,0 +1,453 @@
+CRITICAL - 2022-10-04 04:54:48 --> Trying to access array offset on value of type int
+in APPPATH\Views\order\index.php on line 24.
+ 1 APPPATH\Views\order\index.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type int', 'APPPATH\\Views\\order\\index.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(22): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:00:48 --> Use of undefined constant i - assumed 'i' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Order.php on line 21.
+ 1 APPPATH\Controllers\Order.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant i - assumed \'i\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Order.php', 21, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:03:13 --> Array to string conversion
+in APPPATH\Controllers\Order.php on line 21.
+ 1 APPPATH\Controllers\Order.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Order.php', 21, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:03:38 --> Array to string conversion
+in APPPATH\Controllers\Order.php on line 21.
+ 1 APPPATH\Controllers\Order.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Order.php', 21, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:03:39 --> Array to string conversion
+in APPPATH\Controllers\Order.php on line 21.
+ 1 APPPATH\Controllers\Order.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Order.php', 21, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:11:57 --> Undefined variable: totalOrders
+in APPPATH\Views\order\index.php on line 14.
+ 1 APPPATH\Views\order\index.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: totalOrders', 'APPPATH\\Views\\order\\index.php', 14, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(35): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:12:54 --> Call to undefined method App\Models\OrdersModel::countAllResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Order.php(17): CodeIgniter\Model->__call('countAllResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:14:01 --> Undefined variable: o
+in APPPATH\Views\order\index.php on line 26.
+ 1 APPPATH\Views\order\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: o', 'APPPATH\\Views\\order\\index.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(37): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:14:59 --> Undefined variable: o
+in APPPATH\Views\order\index.php on line 69.
+ 1 APPPATH\Views\order\index.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: o', 'APPPATH\\Views\\order\\index.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(37): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:15:33 --> Undefined offset: 4
+in APPPATH\Views\order\index.php on line 26.
+ 1 APPPATH\Views\order\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 4', 'APPPATH\\Views\\order\\index.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(37): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:17:58 --> Array and string offset access syntax with curly braces is deprecated
+in APPPATH\Controllers\Order.php on line 22.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Array and string offset access syntax with curly braces is deprecated', 'APPPATH\\Controllers\\Order.php', 22, [...])
+ 2 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 3 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('order/index')
+ 4 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('order/index')
+ 5 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('order/index')
+ 6 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:18:53 --> Array and string offset access syntax with curly braces is deprecated
+in APPPATH\Controllers\Order.php on line 22.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Array and string offset access syntax with curly braces is deprecated', 'APPPATH\\Controllers\\Order.php', 22, [...])
+ 2 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 3 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('order/index')
+ 4 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('order/index')
+ 5 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('order/index')
+ 6 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:19:08 --> Undefined offset: 4
+in APPPATH\Views\order\index.php on line 26.
+ 1 APPPATH\Views\order\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 4', 'APPPATH\\Views\\order\\index.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(37): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:19:53 --> syntax error, unexpected ';', expecting ')'
+in APPPATH\Views\order\index.php on line 26.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 3 APPPATH\Controllers\Order.php(37): view('order/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:19:54 --> syntax error, unexpected ';', expecting ')'
+in APPPATH\Views\order\index.php on line 26.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 3 APPPATH\Controllers\Order.php(37): view('order/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:20:41 --> Undefined index: table
+in APPPATH\Views\order\index.php on line 26.
+ 1 APPPATH\Views\order\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: table', 'APPPATH\\Views\\order\\index.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(37): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:21:32 --> Undefined offset: 4
+in APPPATH\Views\order\index.php on line 26.
+ 1 APPPATH\Views\order\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 4', 'APPPATH\\Views\\order\\index.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(37): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:40:14 --> Illegal string offset 'table'
+in APPPATH\Views\order\index.php on line 14.
+ 1 APPPATH\Views\order\index.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'table\'', 'APPPATH\\Views\\order\\index.php', 14, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(39): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:40:33 --> Illegal string offset 'table'
+in APPPATH\Views\order\index.php on line 25.
+ 1 APPPATH\Views\order\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'table\'', 'APPPATH\\Views\\order\\index.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(39): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:54:21 --> Uninitialized string offset: 1
+in APPPATH\Views\order\index.php on line 14.
+ 1 APPPATH\Views\order\index.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Uninitialized string offset: 1', 'APPPATH\\Views\\order\\index.php', 14, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(43): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 06:57:18 --> Trying to access array offset on value of type int
+in APPPATH\Controllers\Order.php on line 32.
+ 1 APPPATH\Controllers\Order.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type int', 'APPPATH\\Controllers\\Order.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 07:12:37 --> Undefined variable: i
+in APPPATH\Controllers\Order.php on line 32.
+ 1 APPPATH\Controllers\Order.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: i', 'APPPATH\\Controllers\\Order.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 07:17:39 --> Array to string conversion
+in APPPATH\Views\order\index.php on line 25.
+ 1 APPPATH\Views\order\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\order\\index.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(43): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 07:18:51 --> Undefined index: name
+in APPPATH\Views\order\index.php on line 64.
+ 1 APPPATH\Views\order\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: name', 'APPPATH\\Views\\order\\index.php', 64, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(43): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 08:44:17 --> Illegal string offset 'table'
+in APPPATH\Views\order\index.php on line 25.
+ 1 APPPATH\Views\order\index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'table\'', 'APPPATH\\Views\\order\\index.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(43): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:02:19 --> syntax error, unexpected ''ordersTable'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+in APPPATH\Controllers\Order.php on line 65.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('order/index')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('order/index')
+ 3 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('order/index')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:02:35 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Controllers\Order.php on line 65.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('order/index')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('order/index')
+ 3 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('order/index')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:10:08 --> Undefined variable: ordersTtable
+in APPPATH\Controllers\Order.php on line 70.
+ 1 APPPATH\Controllers\Order.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ordersTtable', 'APPPATH\\Controllers\\Order.php', 70, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:10:21 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:10:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:10:47 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:10:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:11:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 09:13:56 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:09:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:09:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:10:01 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:12:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:13:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:13:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('FCPATH\\images', 'Logo.png')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:13:25 --> Invalid argument supplied for foreach()
+in APPPATH\Views\order\index.php on line 13.
+ 1 APPPATH\Views\order\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\order\\index.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(84): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:13:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Order.php on line 55.
+ 1 APPPATH\Controllers\Order.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Order.php', 55, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 11:15:17 --> Invalid argument supplied for foreach()
+in APPPATH\Views\order\index.php on line 13.
+ 1 APPPATH\Views\order\index.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\order\\index.php', 13, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\order\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('order/index', [], true)
+ 5 APPPATH\Controllers\Order.php(48): view('order/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:20:05 --> Invalid argument supplied for foreach()
+in APPPATH\Controllers\Order.php on line 30.
+ 1 APPPATH\Controllers\Order.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Controllers\\Order.php', 30, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:21:58 --> Uninitialized string offset: 1
+in APPPATH\Controllers\Order.php on line 33.
+ 1 APPPATH\Controllers\Order.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Uninitialized string offset: 1', 'APPPATH\\Controllers\\Order.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:22:12 --> syntax error, unexpected ']'
+in APPPATH\Controllers\Order.php on line 33.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('order')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('order')
+ 3 SYSTEMPATH\CodeIgniter.php(782): CodeIgniter\Router\Router->handle('order')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:22:27 --> Uninitialized string offset: 1
+in APPPATH\Controllers\Order.php on line 33.
+ 1 APPPATH\Controllers\Order.php(33): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Uninitialized string offset: 1', 'APPPATH\\Controllers\\Order.php', 33, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
