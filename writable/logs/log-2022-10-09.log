@@ -1,0 +1,257 @@
+CRITICAL - 2022-10-09 12:20:14 --> Undefined property: App\Controllers\Admin::$session
+in APPPATH\Controllers\Admin.php on line 18.
+ 1 APPPATH\Controllers\Admin.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Admin::$session', 'APPPATH\\Controllers\\Admin.php', 18, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Admin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:12:39 --> Cannot call constructor
+in APPPATH\Controllers\Menu.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(864): App\Controllers\Menu->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:14:14 --> Cannot call constructor
+in APPPATH\Controllers\Menu.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(864): App\Controllers\Menu->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:39:09 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\Menu.php on line 199.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:02:14 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::request()
+in APPPATH\Controllers\Menu.php on line 201.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:04:25 --> Undefined property: App\Controllers\Menu::$menuModel
+in APPPATH\Controllers\Menu.php on line 202.
+ 1 APPPATH\Controllers\Menu.php(202): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Menu::$menuModel', 'APPPATH\\Controllers\\Menu.php', 202, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:04:52 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::select()
+in APPPATH\Models\MenusModel.php on line 14.
+ 1 APPPATH\Controllers\Menu.php(202): App\Models\MenusModel->checkProduct('apa aja')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:12:22 --> Call to undefined method CodeIgniter\Database\Postgre\Result::result()
+in APPPATH\Controllers\Menu.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:12:51 --> Call to undefined method CodeIgniter\Database\Postgre\Result::num_rows()
+in APPPATH\Controllers\Menu.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:14:21 --> Call to undefined method CodeIgniter\Database\Postgre\Result::num_rows()
+in APPPATH\Controllers\Menu.php on line 201.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:15:07 --> Call to undefined method CodeIgniter\Database\Postgre\Result::result_array()
+in APPPATH\Controllers\Menu.php on line 201.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:18:49 --> Call to a member function count() on array
+in APPPATH\Controllers\Menu.php on line 201.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:19:04 --> Call to a member function num_rows() on array
+in APPPATH\Controllers\Menu.php on line 201.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:24:35 --> Call to a member function countAllResults() on array
+in APPPATH\Controllers\Menu.php on line 201.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:25:11 --> Call to a member function countAll() on array
+in APPPATH\Controllers\Menu.php on line 201.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:27:10 --> Call to a member function num_rows() on array
+in APPPATH\Controllers\Menu.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:27:20 --> Call to a member function num_row() on array
+in APPPATH\Controllers\Menu.php on line 202.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:34:09 --> Undefined property: App\Controllers\Menu::$validate
+in APPPATH\Controllers\Menu.php on line 225.
+ 1 APPPATH\Controllers\Menu.php(225): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Menu::$validate', 'APPPATH\\Controllers\\Menu.php', 225, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:36:28 --> Undefined property: App\Controllers\Menu::$validate
+in APPPATH\Controllers\Menu.php on line 225.
+ 1 APPPATH\Controllers\Menu.php(225): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Menu::$validate', 'APPPATH\\Controllers\\Menu.php', 225, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:37:38 --> Array to string conversion
+in APPPATH\Controllers\Menu.php on line 226.
+ 1 APPPATH\Controllers\Menu.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Menu.php', 226, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-10-09 14:44:45 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;menus_pkey&quot;
+DETAIL:  Key (id)=(1) already exists. in C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\laragon\\www\\...', 140, Array)
+#1 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(140): pg_query(Resource id #138, 'INSERT INTO "me...')
+#2 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "me...')
+#3 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "me...')
+#4 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "me...', Array, false)
+#5 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\BaseModel.php(748): CodeIgniter\Model->doInsert(Array)
+#7 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\laragon\www\ci-yoga\skripsi-yoga\app\Controllers\Menu.php(220): CodeIgniter\Model->insert(Array)
+#9 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+#10 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+#11 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\ci-yoga\skripsi-yoga\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\ci-yoga\skripsi-yoga\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('C:\\laragon\\www\\...')
+#14 {main}
+CRITICAL - 2022-10-09 14:44:45 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;menus_pkey&quot;
+DETAIL:  Key (id)=(1) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;menus_pkey&quot;
+DETAIL:  Key (id)=(1) already exists.', 'SYSTEMPATH\\Database\\Postgre\\Connection.php', 140, [...])
+ 2 SYSTEMPATH\Database\Postgre\Connection.php(140): pg_query(resource (pgsql link), 'INSERT INTO "menus" ("name", "contentDetail", "imageUrl", "price", "rating", "stock", "category", "created_at", "updated_at") VALUES (\'apa aja\', \'appa aja\', \'1665344685_fb7c01edf609fd7a9205.png\', \'15000\', \'4.9\', \'tersedia\', \'Food\', \'2022-10-09 14:44:45\', \'2022-10-09 14:44:45\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "menus" ("name", "contentDetail", "imageUrl", "price", "rating", "stock", "category", "created_at", "updated_at") VALUES (\'apa aja\', \'appa aja\', \'1665344685_fb7c01edf609fd7a9205.png\', \'15000\', \'4.9\', \'tersedia\', \'Food\', \'2022-10-09 14:44:45\', \'2022-10-09 14:44:45\')')
+ 4 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "menus" ("name", "contentDetail", "imageUrl", "price", "rating", "stock", "category", "created_at", "updated_at") VALUES (\'apa aja\', \'appa aja\', \'1665344685_fb7c01edf609fd7a9205.png\', \'15000\', \'4.9\', \'tersedia\', \'Food\', \'2022-10-09 14:44:45\', \'2022-10-09 14:44:45\')')
+ 5 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "menus" ("name", "contentDetail", "imageUrl", "price", "rating", "stock", "category", "created_at", "updated_at") VALUES (:name:, :contentDetail:, :imageUrl:, :price:, :rating:, :stock:, :category:, :created_at:, :updated_at:)', [...], false)
+ 6 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\Menu.php(220): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:54:20 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::where()
+in APPPATH\Models\MenusModel.php on line 36.
+ 1 APPPATH\Controllers\Menu.php(199): App\Models\MenusModel->checkProduct('apa aja')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:56:57 --> Call to undefined method CodeIgniter\Database\Postgre\Builder::findAll()
+in APPPATH\Models\MenusModel.php on line 36.
+ 1 APPPATH\Controllers\Menu.php(199): App\Models\MenusModel->checkProduct('apa aja')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:59:07 --> Call to undefined method CodeIgniter\Database\Postgre\Result::result()
+in APPPATH\Models\MenusModel.php on line 36.
+ 1 APPPATH\Controllers\Menu.php(199): App\Models\MenusModel->checkProduct('apa aja')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:59:30 --> Call to undefined method CodeIgniter\Database\Postgre\Result::result_array()
+in APPPATH\Models\MenusModel.php on line 36.
+ 1 APPPATH\Controllers\Menu.php(199): App\Models\MenusModel->checkProduct('apa aja')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:59:57 --> Call to undefined method CodeIgniter\Database\Postgre\Result::num_rows()
+in APPPATH\Models\MenusModel.php on line 37.
+ 1 APPPATH\Controllers\Menu.php(199): App\Models\MenusModel->checkProduct('apa aja')
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Menu->store_product()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Menu))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 15:14:00 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\Api/V1/Menu::index
+in SYSTEMPATH\Router\Router.php on line 466.
+ 1 SYSTEMPATH\Router\Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Api/V1/Menu::index')
+ 2 SYSTEMPATH\Router\Router.php(181): CodeIgniter\Router\Router->checkRoutes('api/v1/menu')
+ 3 SYSTEMPATH\CodeIgniter.php(777): CodeIgniter\Router\Router->handle('api/v1/menu')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 15:32:02 --> Call to undefined method App\Models\MenusModel::pages
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Api.php(41): CodeIgniter\Model->__call('pages', [])
+ 2 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Api->pagination()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 15:50:00 --> Failed to parse json string, error: "Type is not supported".
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not supported')
+ 2 SYSTEMPATH\API\ResponseTrait.php(348): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\API\ResponseTrait.php(99): App\Controllers\Api->format([...])
+ 4 APPPATH\Controllers\Api.php(44): App\Controllers\Api->respond([...], 200)
+ 5 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Api->pagination('1')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 15:50:22 --> Call to undefined method CodeIgniter\Database\Postgre\Result::result()
+in APPPATH\Controllers\Api.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(902): App\Controllers\Api->pagination('1')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -7,6 +7,21 @@ use App\Models\OrdersModel;
 
 class Admin extends BaseController
 {
+    public function __construct()
+    {
+        $session = session();
+        if ($session->get("logged_in")) {
+            $menusModel = new MenusModel();
+            $menus = $menusModel->findAll();
+            $data = 
+            [
+                'session' => $session,
+                'menus' => $menus
+            ]; 
+            return view('menu', $data);
+        }
+    }
+
     public function login()
     {
         $session = session();
@@ -28,6 +43,7 @@ class Admin extends BaseController
         if($this->validate($rules))
         {
             $username = $this->request->getVar('username');
+            $password = $this->request->getVar('password');
             $admin = $adminModel->where('username', $username)->first();
             if($admin)
             {
@@ -42,7 +58,7 @@ class Admin extends BaseController
                         'totalOrders' => $totalOrders,
                         'logged_in' => true
                     ];
-                    $sessionn->set($data_ses);
+                    $session->set($data_ses);
                     return redirect()->to('/menu/index');
                 }
                 else

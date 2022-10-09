@@ -11,17 +11,6 @@
         class="w-full max-w-xs xl:max-w-lg 2xl:max-w-2xl bg-gray-100 rounded-md hidden lg:flex items-center"
       >
       <form method="post" action="<?= base_url('/menu/search'); ?>">
-
-        <select
-          class="bg-transparent uppercase font-bold text-sm p-4 mr-4"
-          name="categories"
-          id=""
-        >
-        <option value="">all categories</option>
-          <option value="makanan">Makanan</option>
-          <option value="minuman">Minuman</option>
-        </select>
-        
         <input
           class="border-l border-gray-300 bg-transparent font-semibold text-sm pl-4"
           type="text"
@@ -59,10 +48,6 @@
           <div class="relative inline-block text-left">
   <div>
   <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100" type="button">
-   
-       
-            
-
               <svg
                 class="h-9 lg:h-10 p-2 text-gray-500"
                 aria-hidden="true"
