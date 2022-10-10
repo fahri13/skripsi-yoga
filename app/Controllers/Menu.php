@@ -11,11 +11,16 @@ use App\Models\OrdersModel;
 
 class Menu extends BaseController
 {
+    public function __construct()
+    {
+        $this->menusModel = model('MenusModel');
+        $this->validate = \Config\Services::validation();
+    }
+
     public function index()
     {
         $session = session();
-        $menusModel = new MenusModel();
-        $menus = $menusModel->findAll();
+        $menus = $this->menusModel->findAll();
         $data = 
         [
             'session' => $session,
@@ -27,29 +32,28 @@ class Menu extends BaseController
     public function stok($name = false)
     {
         $session = session();
-        $menusModel = new MenusModel();
         if($name)
         {
-            $menus = $menusModel->where('name', $name)->first();
-            if($menus['stok'] == 'tersedia')
+            $menus = $this->menusModel->where('name', $name)->first();
+            if($menus['stock'] == 'tersedia')
             {
                 $data_menus = 
                 [
                     'id' => $menus['id'],
-                    'stok' => 'habis'
+                    'stock' => 'habis'
                 ];    
-                $menusModel->save($data_menus);
-                $menus_update = $menusModel->orderBy('stok', 'ASC')->findAll();
+                $this->menusModel->save($data_menus);
+                $menus_update = $this->menusModel->orderBy('stock', 'ASC')->findAll();
             }
-            elseif($menus['stok'] == 'habis')
+            else
             {
                 $data_menus = 
                 [
                     'id' => $menus['id'],
-                    'stok' => 'tersedia'
+                    'stock' => 'tersedia'
                 ];    
-                $menusModel->save($data_menus);
-                $menus_update = $menusModel->orderBy('stok', 'ASC')->findAll();
+                $this->menusModel->save($data_menus);
+                $menus_update = $this->menusModel->orderBy('stock', 'ASC')->findAll();
             }
             $data =
             [
@@ -60,7 +64,7 @@ class Menu extends BaseController
         }
         else
         {
-            $menus = $menusModel->orderBy('stok', 'ASC')->findAll();
+            $menus = $this->menusModel->orderBy('stock', 'ASC')->findAll();
             
             $data =
             [
@@ -83,7 +87,6 @@ class Menu extends BaseController
     public function search()
     {
         $session = session();
-        $menusModel = new MenusModel();
         $ordersModel = new OrdersModel();
         $search = $this->request->getVar('search');
         $categories = $this->request->getVar('categories');
@@ -92,7 +95,7 @@ class Menu extends BaseController
         {
             if($search && $categories)
             {
-                $menus = $menusModel->where('category', $categories)->like('name', $search)->findAll();
+                $menus = $this->menusModel->where('category', $categories)->like('name', $search)->findAll();
                 if($menus)
                 {
                     $data = 
@@ -130,7 +133,7 @@ class Menu extends BaseController
             {
                 if($search)
                 {
-                    $menus = $menusModel->like('name', $search)->findAll();
+                    $menus = $this->menusModel->like('name', $search)->findAll();
                     if($menus)
                     {
                         $data = 
@@ -163,7 +166,7 @@ class Menu extends BaseController
                 }
                 else
                 {
-                    $menus = $menusModel->like('category', $categories)->findAll();
+                    $menus = $this->menusModel->like('category', $categories)->findAll();
                     if($menus)
                     {
                         $data = 
@@ -187,10 +190,40 @@ class Menu extends BaseController
     public function show()
     {
         $session = session();
-        $menusModel = new MenusModel();
-        $menus = $menusModel->findAll();
+        $menus = $this->menusModel->findAll();
 
-        return $this->respond($data, 200);
+        return $this->respond($menus, 200);
+    }
+
+    public function store_product(){
+        $dataProduct = $this->menusModel->where('name', $this->request->getPost('name_product'))->findAll();
+
+        if (count($dataProduct) > 0){
+            return redirect()->back();
+        }
+
+        if ($this->request->getMethod() === 'post' && $this->validate([
+            'name_product' => 'required|min_length[3]|max_length[255]',
+            'detail_product'  => 'required',
+            'price' => 'required'
+        ])) {
+            $dataBerkas = $this->request->getFile('file_product');
+            $fileName = $dataBerkas->getRandomName();
+            $dataBerkas->move('uploads/berkas/', $fileName);
+            $this->menusModel->insert([
+                'name' => $this->request->getPost('name_product'),
+                'contentDetail'  => $this->request->getPost('detail_product'),
+                'imageUrl'  => $fileName,
+                'price' => $this->request->getPost('price'),
+                'rating' => '4.9',
+                'stock' => 'tersedia',
+                'category' => $this->request->getPost('category')
+            ]);
+
+            return redirect()->to('menu');
+        }else{
+            print_r($this->validate->getErrors());
+        }
     }
 
 }

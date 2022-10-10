@@ -113,4 +113,12 @@ class Order extends BaseController
             return $this->fallNotFound('maap '.$id.' ga ada');
         }
     }
+
+    public function add_product(){
+        return view('order/add_product');
+    }
+
+    public function store(){
+        
+    }
 }

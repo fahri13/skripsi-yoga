@@ -10,14 +10,28 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %> -->
-    <link rel="stylesheet" href="/css/app.css">
-    <?= $this->include('layout/style.css'); ?>
-    <script src="/js/app.js"></script>
+    <!-- <link rel="stylesheet" href="/css/app.css"> -->
+    <!-- <script src="/js/app.js"></script> -->
+    <!-- <script src="/js/dropzone.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function isNumberKey(evt){
+          // Only ASCII character in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+      }
+    </script>
   </head>
 
   <body>
     <!-- <%= yield %> -->
     <?= $this->renderSection('content'); ?>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
   </body>
 </html>

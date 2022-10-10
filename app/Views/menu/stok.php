@@ -33,13 +33,13 @@
 						</th>
 						<td class="px-6 py-4">
               <div class="py-2 md:ml-4">
-                <?= $m['stok'] ?>
+                <?= $m['stock'] ?>
               </div>
 						</td>
 						<td class="px-6 py-4">
 							<!-- <%= link_to "#{m[:stock] == 'tersedia' ? 'Menu Habis' : 'Menu Tersedia'}", "/availablestock/#{m[:id]}", class: "py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-white focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus:outline-none focus:shadow-outline" %>  -->
 							<!-- <a placeholder="<= ($m['stok'] == 'tersedia') ? 'Menu Tersedia' : 'Menu Habis' ?>" class="py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-white focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus:outline-none focus:shadow-outline" %>  -->
-							<a href="<?= base_url('/menu/stok/'.$m['name']); ?>" class="py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-white focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus:outline-none focus:shadow-outline"><?= ($m['stok'] == 'tersedia') ? 'Menu Habis' : 'Menu Tersedia' ?></a> 
+							<a href="<?= base_url('/menu/stok/'.$m['name']); ?>" class="py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-white focus:text-gray-900 hover:bg-yellow-400 focus:bg-yellow-400 focus:outline-none focus:shadow-outline"><?= ($m['stock'] == 'tersedia') ? 'Menu Habis' : 'Menu Tersedia' ?></a> 
 						</td>
 					</tr>
         <?php endforeach; ?>

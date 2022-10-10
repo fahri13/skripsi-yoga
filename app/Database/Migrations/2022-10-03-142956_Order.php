@@ -8,23 +8,7 @@ class Order extends Migration
 {
     public function up()
     {
-        $this->forge->addField([
-            'id' =>
-            [
-                'type' => 'INT',
-                'constraint' => '11',
-                'auto_increment' => true
-            ],
-            'number' => 
-            [
-                'type' => 'INT',
-                'constraint' => '11',
-                'unique' => true
-            ]
-        ]);
-        $this->forge->addKey('id', true);
-        $this->forge->createTable('tables');
-
+        
         $this->forge->addField([
             'id' =>
             [
@@ -63,7 +47,7 @@ class Order extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '50'
             ],
-            'stok' => 
+            'stock' => 
             [
                 'type' => 'VARCHAR', 
                 'constraint' => '100'
@@ -107,7 +91,6 @@ class Order extends Migration
         ]);
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('menu', 'menus', 'name', 'CASCADE', 'NO ACTION');
-        $this->forge->addForeignKey('table', 'tables','number', 'CASCADE', 'NO ACTION');
         $this->forge->createTable('orders');
 
         $this->forge->addField([
