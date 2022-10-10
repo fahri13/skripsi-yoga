@@ -10,38 +10,9 @@
       <div
         class="w-full max-w-xs xl:max-w-lg 2xl:max-w-2xl bg-gray-100 rounded-md hidden lg:flex items-center"
       >
-      <form method="post" action="<?= base_url('/menu/search'); ?>">
-        <input
-          class="border-l border-gray-300 bg-transparent font-semibold text-sm pl-4"
-          type="text"
-          placeholder="I'm searching for ..."
-          name="search"
-          id="search"
-        />
-        </form>
-        <svg
-          class="ml-auto h-5 px-4 text-gray-500"
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="far"
-          data-icon="search"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          class="svg-inline--fa fa-search fa-w-16 fa-9x"
-        >
-          <path
-            fill="currentColor"
-            d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
-          ></path>
-        </svg>
+      
       </div>
-      <!-- phone number -->
-      <!-- <div class="ml-auto md:w-48 hidden sm:flex flex-col place-items-end">
-        <span class="font-bold md:text-xl">62 858 9182 9851</span>
-      </div> -->
-      <!-- buttons -->
-      <nav class="contents">
+      <nav class="contents z-30">
         <ul class="ml-4 xl:w-48 flex items-center justify-end">
           <li class="ml-2 lg:ml-4 relative inline-block">
        
@@ -70,17 +41,17 @@
 
             <div id="dropdown" class="hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
-      <li>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-white">Add Product</a>
-      </li>
-      <li>
-        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-white">Update Password</a>
-      </li>
-    </ul>
-    <div class="py-1">
-      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-gray-200 dark:hover:text-white">Logout</a>
-    </div>
-</div>
+              <li>
+                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-white">Add Product</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-200 dark:hover:text-white">Update Password</a>
+              </li>
+            </ul>
+            <div class="py-1">
+              <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-gray-200 dark:hover:text-white">Logout</a>
+            </div>
+        </div>
 
           </li>
         </ul>
@@ -88,7 +59,11 @@
       <!-- cart count -->
       <div class="ml-4 hidden sm:flex flex-col font-bold">
         <span class="text-xs text-gray-400">Your Order</span>
-        <span> 12 items </span>
+        <?php 
+          $ordersModel = model('OrdersModel');
+          $totalorder = $ordersModel->distinct()->findColumn('table');
+        ?>
+        <span> <?= count($totalorder) ?> orders </span>
       </div>
       
     </div>
@@ -101,24 +76,3 @@
 <?= $this->include('layout/footer'); ?>
   </main>
 </div>
-<!-- <script type="text/javascript">
-  const search = document.getElementById('search');
-
-  search.addEventListener('keyup', function(){
-  //  if(str.length == 0)
-  //  {
-  //   document.getElementById('').innerHYML = "";
-  //  }
-   const xhttp =  new XMLHttpRequest();
-   xhttp.onreadyStatechange = function(){
-    if(xhttp.readyState == 4 && xhttp.status == 200){
-      document.getElementById('stok').innerHTML = this.response;
-    }
-   }
-  //  true = mengaktifkan asyncronous
-  // false = mengaktivkan synkronous atau mematikan ajaxnya
-   xhttp.open('GET', '/menu/search/'+search.value, true);
-  //  menjalankan ajaxnya
-   xhttp.send();
-  });
-</script> -->

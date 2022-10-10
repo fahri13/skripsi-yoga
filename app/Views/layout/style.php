@@ -8,7 +8,6 @@
     }
  
     .juice3 {
-      z-index: 10;
       position: relative;
     }
  
