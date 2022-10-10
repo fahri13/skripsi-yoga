@@ -11,15 +11,20 @@ use App\Models\OrdersModel;
 
 class Order extends BaseController
 {
+    public function __construct(){
+        $this->menusModel = model('MenusModel');
+        $this->ordersModel = model('OrdersModel');
+    }
+
     public function index()
     {
         $session = session();
-        $menusModel = new MenusModel();
-        $ordersModel = new OrdersModel();
-        $orders = $ordersModel->findAll();
+        $orders = $this->ordersModel->findAll();
         // $orders = $ordersModel->findAll();
-        $ordersTable = $ordersModel->orderBy('table', 'ASC')->findColumn('table');
-        // $totalOrders = $ordersModel->countAllResults();
+        $ordersTable = $this->ordersModel->orderBy('table', 'ASC')->distinct()->findColumn('table');
+        // $totalOrders = $this->ordersModel->where('table', '1')->selectSum('totalPrice')->find();
+        // var_dump($totalOrders);
+        // die();
         // $orders = $ordersModel->findColumn('table');
         // dd($orders);
         // for($i = 1; $i<5; $i++)
@@ -96,7 +101,8 @@ class Order extends BaseController
             'ordersTable' => $ordersTable
         ];
         
-        return view('order/index', $data);
+        // return view('order/index', $data);
+        return redirect()->to('order');
     }
 
     public function tambah($id = null)
