@@ -82,7 +82,7 @@
       <div class="bg-gray-900">
         <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
           <p class="text-white text-sm text-center sm:text-left">© 2022 Dev —
-            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-400 ml-1" target="_blank">@TendaIT</a>
+            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-400 ml-1" target="_blank">@YogaIndah</a>
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
             <a class="text-gray-200">

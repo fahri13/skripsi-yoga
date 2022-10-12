@@ -33,13 +33,14 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'username' => 'id19691971_sariminang',
+        'password' => '<yC\C5LxK{1izXxg',
+        'database' => 'id19691971_db_sariminang',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
-        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        // 'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'DBDebug'  => (ENVIRONMENT !== 'development'),
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',
@@ -85,7 +86,7 @@ class Database extends Config
         // we are currently running an automated test suite, so that
         // we don't overwrite live data on accident.
         if (ENVIRONMENT === 'testing') {
-            $this->defaultGroup = 'tests';
+            $this->defaultGroup = ENVIRONMENT;
         }
     }
 }

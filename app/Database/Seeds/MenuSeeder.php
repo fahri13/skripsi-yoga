@@ -17,7 +17,7 @@ class MenuSeeder extends Seeder
                 'imageUrl' => '',
                 'rating' => 0,
                 'category' => 'Makanan',
-                'stok' => 'tersedia',
+                'stock' => 'tersedia',
             ], 
             [
                 'name' => 'Nasi Uduk',
@@ -26,7 +26,7 @@ class MenuSeeder extends Seeder
                 'imageUrl' => '',
                 'rating' => 0,
                 'category' => 'Makanan',
-                'stok' => 'tersedia',
+                'stock' => 'tersedia',
             ], 
             [
                 'name' => 'Nasi Rames',
@@ -35,7 +35,7 @@ class MenuSeeder extends Seeder
                 'imageUrl' => '',
                 'rating' => 0,
                 'category' => 'Makanan',
-                'stok' => 'tersedia',
+                'stock' => 'tersedia',
             ], 
             [
                 'name' => 'Jus Jeruk',
@@ -44,7 +44,7 @@ class MenuSeeder extends Seeder
                 'imageUrl' => '',
                 'rating' => 0,
                 'category' => 'Minuman',
-                'stok' => 'tersedia',
+                'stock' => 'tersedia',
             ], 
             [
                 'name' => 'Es Teh',
@@ -53,7 +53,7 @@ class MenuSeeder extends Seeder
                 'imageUrl' => '',
                 'rating' => 0,
                 'category' => 'Minuman',
-                'stok' => 'tersedia',
+                'stock' => 'tersedia',
             ], 
         ];
         $this->db->table('menus')->insertBatch($data_menus);

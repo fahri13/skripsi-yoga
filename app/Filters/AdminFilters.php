@@ -19,7 +19,7 @@ class AdminFilters implements FilterInterface
     {
         if(session()->get('logged_in'))
         {
-            return redirect()->to('/menu/index');
+            return redirect()->to('/order/index');
         }
     }
 }

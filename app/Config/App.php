@@ -24,9 +24,11 @@ class App extends BaseConfig
      *
      * @var string
      */
-    // public $baseURL = 'http://localhost:8080/';
+    public $baseURL = 'http://localhost:8080/';
+    // public $baseURL = 'https://sariminang12.000webhostapp.com/public_html/';
+    // public $baseURL = 'https://sariminang12.000webhostapp.com/';
     // public $baseURL = 'http://192.168.141.52/';
-    public $baseURL = 'http://192.168.151.52/latihan/latihan/laravel/skripsiy/appstarter/public/';
+    // public $baseURL = 'http://192.168.151.52/latihan/latihan/laravel/skripsiy/appstarter/public/';
 
     /**
      * --------------------------------------------------------------------------

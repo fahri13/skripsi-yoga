@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-namespace App\Controllers
+namespace App\Controllers;
 
 class Halaman extends BaseController
 {

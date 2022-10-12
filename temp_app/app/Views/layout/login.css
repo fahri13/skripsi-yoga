@@ -1,0 +1,155 @@
+<style>
+/* Desktop - 1 */
+
+position: relative;
+width: 1366px;
+height: 1024px;
+
+background: #FFFFFF;
+
+
+/* Line 1 */
+
+position: absolute;
+width: 1366px;
+height: 0px;
+left: 8px;
+top: 297px;
+
+border: 1px solid #000000;
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1366px;
+height: 297px;
+left: 0px;
+top: 0px;
+
+background: #FFC225;
+
+
+/* logor 1 */
+
+position: absolute;
+width: 595px;
+height: 166px;
+left: 385px;
+top: 65px;
+
+background: url(logor);
+
+
+/* LOGIN ADMIN */
+
+position: absolute;
+width: 295px;
+height: 38px;
+left: 568px;
+top: 383px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 47px;
+
+color: #000000;
+
+
+
+/* username */
+
+position: absolute;
+width: 170px;
+height: 40px;
+left: 513px;
+top: 529px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 40px;
+/* identical to box height */
+
+color: #000000;
+
+mix-blend-mode: hard-light;
+opacity: 0.27;
+
+
+/* Line 2 */
+
+position: absolute;
+width: 360px;
+height: 0px;
+left: 503px;
+top: 573px;
+
+border: 1px solid #000000;
+
+
+/* Line 3 */
+
+position: absolute;
+width: 360px;
+height: 0px;
+left: 503px;
+top: 648px;
+
+border: 1px solid #000000;
+
+
+/* password */
+
+position: absolute;
+width: 170px;
+height: 40px;
+left: 513px;
+top: 604px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 40px;
+/* identical to box height */
+
+color: #000000;
+
+mix-blend-mode: hard-light;
+opacity: 0.27;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 201px;
+height: 57px;
+left: 571px;
+top: 704px;
+
+background: #FFC225;
+border-radius: 65px;
+
+
+/* Masuk */
+
+position: absolute;
+width: 163px;
+height: 55px;
+left: 617px;
+top: 714px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 39px;
+line-height: 46px;
+
+color: #000000;
+
+
+</style>

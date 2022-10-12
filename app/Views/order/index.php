@@ -2,21 +2,21 @@
 <?= $this->extend('layout/index'); ?> 
 <?= $this->section('content'); ?>
  
-    <section class="my-6 py-10">
+    <section class="my-2 py-2">
       <div class="container mx-auto px-4 flex flex-col lg:flex-col">
       <!-- component -->
       <script
         defer
         src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"
       ></script>
-      <?php if($orders) :?>
-      <?php foreach($ordersTable as $t) : ?>
-        <!-- <php if($o['table'] <= $o['id'] || $o['table'] >= $o['id']) : ?> -->
-      <section
-        class="antialiased bg-gray-100 text-gray-600 h-screen px-4 my-8 py-4"
+      <!-- <php if($o['table'] <= $o['id'] || $o['table'] >= $o['id']) : ?> -->
+        <?php if($orders) :?>
+        <?php foreach($ordersTable as $t) : ?>
+        <section
+        class="antialiased bg-gray-100 text-gray-600 px-4 py-2"
         x-data="app"
-      >
-        <div class="flex flex-col justify-center h-full my-8">
+        >
+        <div class="flex flex-col justify-center">
           <!-- Table -->
           <div
             class="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200"
@@ -31,7 +31,6 @@
                   class="text-xs font-semibold uppercase text-gray-400 bg-gray-50"
                 >
                   <tr>
-                    <th></th>
                     <th class="p-2">
                       <div class="font-semibold text-left">Menu</div>
                     </th>
@@ -50,17 +49,14 @@
                 <tbody class="text-sm divide-y divide-gray-100">
                   <!-- record 1 -->
                   <!-- <= $o['table']; ?> -->
-                  <?php foreach($orders as $o) : ?>
-                    <?php if($o['table'] == $t) : ?>
+                  <?php 
+                    $ordersModel = model('OrdersModel');
+                    $order_detail = $ordersModel->where('table', $t)->findAll();
+                    $totalcount = 0;
+                  ?>
+                  <?php foreach($order_detail as $o) : ?>
+                    <?php $totalcount = (int)$o['totalPrice'] + $totalcount;?>
                   <tr>
-                    <td class="p-2">
-                      <input
-                        type="checkbox"
-                        class="w-5 h-5"
-                        value="id-1"
-                        @click="toggleCheckbox($el, <%= lt[:totalPrice] %>)"
-                      />
-                    </td>
                     <td class="p-2">
                       <div class="font-medium text-gray-800">
                         <?= $o['menu']; ?>
@@ -71,7 +67,7 @@
                     </td>
                     <td class="p-2">
                       <div class="text-left font-medium text-green-500">
-                        Rp. <?= $o['totalPrice']; ?>
+                        Rp. <?= number_format($o['totalPrice']); ?>
                       </div>
                     </td>
                     <td class="p-2">
@@ -95,7 +91,6 @@
                       </div>
                     </td>
                   </tr>
-                  <?php endif; ?>
                   <?php endforeach; ?>
                 </tbody>
               </table>
@@ -107,7 +102,7 @@
             >
               <div class="mr-3">Total = </div>
               <div class="text-blue-600">
-                Rp. <span x-text="total"></span>
+                Rp. <span><?= number_format($totalcount) ?></span>
               </div>
             </div>
 
@@ -154,4 +149,4 @@
     
     
     
-    <?= $this->endSection(); ?>
+<?= $this->endSection(); ?>

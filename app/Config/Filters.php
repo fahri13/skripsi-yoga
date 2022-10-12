@@ -64,7 +64,9 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $methods = [];
+    public $methods = [
+        'post' => ['csrf'],
+    ];
 
     /**
      * List of filter aliases that should run on any
@@ -77,15 +79,28 @@ class Filters extends BaseConfig
      */
     public $filters = [
         'admin' => [
-            // 'before' => [
-            //     'menu/*',
-            //     'order/*',
-            //     'admin/logout'
-            // ],
-            // 'after' => [
-            //     'admin/login',
-            //     'admin/auth',
-            // ]
+            'before' => [
+                '',
+                'menu',
+                'order',
+                'menu/*',
+                'menu/index',
+                'menu/stok',
+                'menu/stok/*',
+                'menu/store_product',
+                'order/*',
+                'order/index',
+                'order/delete',
+                'order/delete/*',
+                'order/tambah',
+                'order/add_product',
+                'halaman/*',
+                'admin/logout'
+            ],
+            'after' => [
+                'admin/login',
+                'admin/auth',
+            ]
         ],
     ];
 }

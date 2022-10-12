@@ -11,15 +11,15 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %> -->
     <link rel="stylesheet" href="<?= base_url('/css/app.css'); ?>">
-    <?= $this->include('layout/style.css'); ?>
     <script src="<?= base_url('/js/app.js'); ?>"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   </head>
-
+  
   <body>
+    <?= $this->include('layout/style.php'); ?>
     <!-- <%= yield %> -->
     <!-- <= $this->renderSection('content'); ?> -->
   <?= $this->include('layout/header'); ?>
-
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
   </body>
 </html>
